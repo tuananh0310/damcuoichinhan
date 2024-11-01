@@ -1,16 +1,93 @@
-/* =======================================================
-*
-* 	Template Style
-*
-* ======================================================= */
+/* BeautiqueDisplay Italic */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* BeautiqueDisplay Black */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* BeautiqueDisplay Black Italic */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* BeautiqueDisplay Bold */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* BeautiqueDisplay Bold Italic */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Bold-Italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* BeautiqueDisplay Light */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* BeautiqueDisplay Light Italic */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* BeautiqueDisplay Medium */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* BeautiqueDisplay Medium Italic */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* BeautiqueDisplay Regular */
+@font-face {
+  font-family: 'BeautiqueDisplay';
+  src: url('/fonts/icomoon/BeautiqueDisplay-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Template Style */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
   background: #fff;
 }
+
 
 #page {
   position: relative;
@@ -57,7 +134,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -96,7 +173,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -311,13 +388,13 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+    background-position: center !important;
   }
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   height: 900px;
   display: table;
-  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -788,7 +865,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   left: 0;
   top: .05em;
-  font-family: 'icomoon';
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -841,7 +918,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -1062,7 +1139,7 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
   color: #F14E95;
   font-size: 30px;
 }
@@ -1180,7 +1257,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1472,7 +1549,7 @@ form label {
 #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
   position: absolute;
   right: 0px;
-  font-family: 'icomoon';
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1543,6 +1620,7 @@ form label {
 }
 
 .fh5co-nav-toggle {
+  display: none;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1638,14 +1716,14 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
-    display: block;
+    display: none;
   }
 }
 
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: 'BeautiqueDisplay', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
