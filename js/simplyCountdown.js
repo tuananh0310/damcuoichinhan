@@ -283,3 +283,12 @@ if (window.jQuery) {
         };
     }(jQuery, simplyCountdown));
 }
+
+var targetDate = new Date(2024, 10, 11); // Note: Month is 0-indexed, so 10 represents November
+
+// default example
+simplyCountdown('.simply-countdown-one', {
+    year: targetDate.getFullYear(),
+    month: targetDate.getMonth() + 1,
+    day: targetDate.getDate()
+});
